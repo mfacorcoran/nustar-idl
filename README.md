@@ -5,11 +5,11 @@ Repository for NuSTAR IDL-based analysis and support scripts. The individual dir
 
 To report an issue please use the "Issues" button at top right.
 
-To contribute to this repository, please fork off your own version, add you changes, and then institue a pull request. The admins for this repo will then merge these requests as they arise.
+To contribute to this repository, please fork off your own version, add your changes, and then institute a pull request. The admins for this repo will then merge these requests as they arise.
 
 *** Requirements ***
 
-The nustar-idl repo is heavily dependnet on the AstroLib and Coyote libraries. You MUST have these libraries in your IDL !path. 
+The nustar-idl repo is heavily dependent on the AstroLib and Coyote libraries. You MUST have these libraries in your IDL !path. 
 
 Fortunately, these libraries are also now on GitHub here:
 
@@ -41,8 +41,8 @@ You should already have an IDL_STARTUP script defined somewhere in your .bash_pr
 
 Add the following line to that script:
 
-base = getenv('HOME')
+home = getenv('HOME')
 
-!path = expand_path('+'+base+'/local-idl/')+':'+ !path
+!path = expand_path('+'+home+'/local-idl/')+':'+ !path
 
 where you should modify the path to "local-idl" to where ever you cloned the repositories.
